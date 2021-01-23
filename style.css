@@ -311,14 +311,20 @@ article {
     display: grid;
     max-width: 100%;
     grid-template-areas:
-      "nav nav"
-      "header header"
-      "card card"
-      "card card"
-      "card card1"
-      "card card"
-      "card card"
-      "py-2 py-2";
+      "nav"
+      "nav"
+      "header"
+      "header"
+      "card"
+      "card"
+      "card"
+      "card"
+      "card1"
+      "card"
+      "card"
+      "py-2"
+      "py-2"
+      "footer-end";
   }
   .ButtonNow {
     font-size: 10px;
@@ -326,5 +332,9 @@ article {
 
   .card {
     width: 100%;
+  }
+
+  .airplane {
+    display: none;
   }
 }
