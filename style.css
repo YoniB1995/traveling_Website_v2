@@ -307,12 +307,13 @@ article {
 }
 
 @media screen and (max-width: 375px) {
-  body {
+  .container_body {
     display: grid;
     max-width: 100%;
     grid-template-areas:
       "nav"
-      "nav"
+      "nav2"
+      "nav3"
       "header"
       "card1"
       "card2"
@@ -326,13 +327,28 @@ article {
       "card10"
       "footer1"
       "footer2";
+    grid-gap: 5px;
+  }
+  #nav-bar {
+    justify-content: space-around;
+  }
+
+  .articles-container {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  /* #nav-bar .container img,
+  .social {
+    grid-area: nav;
   }
   .welcome {
-    grid-area: nav;
+    grid-area: nav2;
   }
-  .social,
-  #nav-bar .container ul {
-    grid-area: nav;
+  .nav3 {
+    grid-area: nav3;
   }
   .phone_header {
     grid-area: header;
@@ -366,7 +382,8 @@ article {
   }
   .phone10 {
     grid-area: card10;
-  }
+  } */
+
   #main-footer :nth-child(1) {
     grid-area: footer1;
   }
