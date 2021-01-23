@@ -314,17 +314,64 @@ article {
       "nav"
       "nav"
       "header"
-      "header"
-      "card"
-      "card"
-      "card"
-      "card"
       "card1"
-      "card"
-      "card"
-      "py-2"
-      "py-2"
-      "footer-end";
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8"
+      "card9"
+      "card10"
+      "footer1"
+      "footer2";
+  }
+  .welcome {
+    grid-area: nav;
+  }
+  .social,
+  #nav-bar .container ul {
+    grid-area: nav;
+  }
+  .showcase-container {
+    grid-area: header;
+  }
+  section .container :nth-child(1) {
+    grid-area: card1;
+  }
+  section .container :nth-child(2) {
+    grid-area: card2;
+  }
+  section .container :nth-child(3) {
+    grid-area: card3;
+  }
+  section .container :nth-child(4) {
+    grid-area: card4;
+  }
+  section .container :nth-child(5) {
+    grid-area: card5;
+  }
+  section .container :nth-child(6) {
+    grid-area: card6;
+  }
+  section .container :nth-child(7) {
+    grid-area: card7;
+  }
+  section .container :nth-child(8) {
+    grid-area: card8;
+  }
+  section .container :nth-child(9) {
+    grid-area: card9;
+  }
+  section .container :nth-child(10) {
+    grid-area: card10;
+  }
+  #main-footer :nth-child(1) {
+    grid-area: footer1;
+  }
+  #main-footer :nth-child(2) {
+    grid-area: footer2;
   }
   .ButtonNow {
     font-size: 10px;
