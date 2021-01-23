@@ -334,37 +334,37 @@ article {
   #nav-bar .container ul {
     grid-area: nav;
   }
-  .showcase-container {
+  .phone_header {
     grid-area: header;
   }
-  section .container :nth-child(1) {
+  .phone1 {
     grid-area: card1;
   }
-  section .container :nth-child(2) {
+  .phone2 {
     grid-area: card2;
   }
-  section .container :nth-child(3) {
+  .phone3 {
     grid-area: card3;
   }
-  section .container :nth-child(4) {
+  .phone4 {
     grid-area: card4;
   }
-  section .container :nth-child(5) {
+  .phone5 {
     grid-area: card5;
   }
-  section .container :nth-child(6) {
+  .phone6 {
     grid-area: card6;
   }
-  section .container :nth-child(7) {
+  .phone7 {
     grid-area: card7;
   }
-  section .container :nth-child(8) {
+  .phone8 {
     grid-area: card8;
   }
-  section .container :nth-child(9) {
+  .phone9 {
     grid-area: card9;
   }
-  section .container :nth-child(10) {
+  .phone10 {
     grid-area: card10;
   }
   #main-footer :nth-child(1) {
