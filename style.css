@@ -306,7 +306,7 @@ article {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .container_body {
     display: grid;
     max-width: 100%;
