@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+
+        :root {
+            --box-bg-color: steelblue;
+            --box-txt-color: white;
+            --header-bg-color:green;
+            --box-1-width: 4;
+            --box-2-width: 1;
+        }
+
+        h1 {
+            background: var(--header-bg-color);
+        }
+
+        .box {
+            background: var(--box-bg-color);
+            color: var(--box-txt-color);
+            margin: 10px;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            max-width: 1300px;
+            padding: 10px;
+            flex-direction: row;
+            justify-content: space-around;
+    
+        }
+
+        .box-1 {
+            flex: var(--box-1-width);
+        }
+        .box-2 {
+            flex: var(--box-2-width);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>How to use variables.</h1>
+    <div class="container">
+     
+     <div class="box box-1">
+        <h2>box1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam incidunt distinctio quisquam, ab ipsam?</p>
+     </div>
+     <div class="box box-2">
+        <h2>box2</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam incidunt distinctio quisquam, ab ipsam?</p>
+     </div>
+
+     <div class="box box-3">
+        <h2>box3</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam incidunt distinctio quisquam, ab ipsam?</p>
+     </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+:root {
+  --max-width: 1350px;
+  --primary-color: red;
+  --secondary-color: goldenrod;
+  --light-color: white;
+  --dark-color: #333;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-color);
+  line-height: 1.5;
+}
+.airplane {
+  height: 100px;
+  transform: translateX(350px);
+  animation-name: airplane;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes airplane {
+  from {
+    transform: translateX(270px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Staatliches", cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+.container .social a {
+  text-decoration: none;
+}
+.container .social {
+  justify-self: center;
+}
+.social a img {
+  height: 30px;
+}
+.social a img:hover {
+  opacity: 0.5;
+}
+
+.container {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.container ul li {
+  list-style: none;
+  display: inline;
+  border: 1px solid black;
+  background-color: black;
+  padding: 3px;
+}
+.container ul li a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  margin: 5px;
+}
+nav .container ul li :hover {
+  background-color: red;
+  opacity: 0.5;
+}
+nav .container ul li :active {
+  padding-bottom: 10px;
+  background-color: red;
+  opacity: 0.5;
+}
+#nav-bar .logo {
+  height: 110px;
+}
+#nav-bar {
+  position: static;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+#nav-bar .container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr 3fr;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+#nav-bar ul {
+  justify-self: end;
+}
+#nav-bar ul li a {
+  font-weight: bold;
+}
+
+#showcase {
+  color: white;
+
+  background: #333;
+  padding: 2rem;
+  position: relative;
+  height: 80vh;
+}
+
+#showcase:before {
+  content: "";
+  background: url(/news_logo/hiking.jpeg) no-repeat center center/cover;
+  border: black solid 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.welcome {
+  position: static;
+}
+#main-footer {
+  border: solid 1px;
+  bottom: 0;
+  z-index: 2;
+  background: rgb(50, 55, 65);
+}
+
+#main-footer .container {
+  display: grid;
+  font-size: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  width: 100%;
+  color: white;
+}
+#main-footer .container h3,
+h2 {
+  color: var(--light-color);
+}
+
+#main-footer .container :nth-child(5) {
+  background: black;
+  position: sticky;
+}
+
+#main-footer .container div li {
+  margin: 0px;
+  padding: 2px;
+  display: grid;
+  flex-direction: row;
+  border-radius: 5px;
+  width: 170px;
+}
+#main-footer .container div li :hover {
+  background: red;
+  color: black;
+}
+.footer_end {
+  background: black;
+  position: sticky;
+  color: white;
+  text-align: center;
+}
+.ButtonNow a {
+  text-decoration: none;
+  color: white;
+}
+
+.ButtonNow {
+  background: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.ButtonNow1 {
+  background: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.ButtonNow1:hover {
+  background: red;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.ButtonNow:hover {
+  background: red;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content p {
+  margin-bottom: 1rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
+}
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+article {
+  border-radius: 15px;
+  background: grey;
+}
+
+.py-2 .container div article img {
+  width: 100%;
+}
+
+#main-footer .container {
+  width: 100%;
+}
+
+.card {
+  text-align: center;
+}
+
+.card1 {
+  background: rgb(39, 39, 39);
+  color: white;
+  text-align: center;
+}
+
+.card {
+  margin: 5px;
+  box-shadow: 5px 5px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+      "nav nav"
+      "header header"
+      "card card"
+      "card card"
+      "card card1"
+      "card card"
+      "card card"
+      "py-2 py-2";
+  }
+  .ButtonNow {
+    font-size: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
