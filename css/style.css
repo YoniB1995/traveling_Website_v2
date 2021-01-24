@@ -131,7 +131,7 @@ nav .container ul li :active {
 
 #showcase:before {
   content: "";
-  background: url(news_logo/hiking.jpeg) no-repeat center center/cover;
+  background: url(/news_logo/hiking.jpeg) no-repeat center center/cover;
   border: black solid 1px;
   position: absolute;
   top: 0;
@@ -309,6 +309,15 @@ article {
   width: 100%;
 } */
 
+/* .container_body {
+  display: grid;
+  grid-template-areas: 
+  "nav nav nav"
+  "nav2 nav2 nav2"
+  "nav3 nav3 nav3"
+  "header header header"
+  "card1 card2";
+} */
 @media screen and (max-width: 414px) {
   .container_body {
     display: grid;
