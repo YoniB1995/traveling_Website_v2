@@ -290,10 +290,6 @@ article {
   width: 100%;
 }
 
-.card {
-  text-align: center;
-}
-
 .card1 {
   background: rgb(39, 39, 39);
   color: white;
@@ -304,7 +300,14 @@ article {
   margin: 5px;
   box-shadow: 5px 5px;
   border-radius: 5px;
+  text-align: center;
 }
+
+/* #card10 {
+  display: block;
+  flex: none;
+  width: 100%;
+} */
 
 @media screen and (max-width: 414px) {
   .container_body {

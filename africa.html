@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables</title>
-    <style>
-
-        :root {
-            --box-bg-color: steelblue;
-            --box-txt-color: white;
-            --header-bg-color:green;
-            --box-1-width: 4;
-            --box-2-width: 1;
-        }
-
-        h1 {
-            background: var(--header-bg-color);
-        }
-
-        .box {
-            background: var(--box-bg-color);
-            color: var(--box-txt-color);
-            margin: 10px;
-        }
-
-        .container {
-            display: flex;
-            margin: auto;
-            max-width: 1300px;
-            padding: 10px;
-            flex-direction: row;
-            justify-content: space-around;
-    
-        }
-
-        .box-1 {
-            flex: var(--box-1-width);
-        }
-        .box-2 {
-            flex: var(--box-2-width);
-            
-        }
-
-    </style>
+    <title>World Traveling Guide</title>
+    <link rel="shortcut icon" href="news_logo/world icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>How to use variables.</h1>
-    <div class="container">
-     
-     <div class="box box-1">
-        <h2>box1</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam incidunt distinctio quisquam, ab ipsam?</p>
-     </div>
-     <div class="box box-2">
-        <h2>box2</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam incidunt distinctio quisquam, ab ipsam?</p>
-     </div>
 
-     <div class="box box-3">
-        <h2>box3</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque laboriosam incidunt distinctio quisquam, ab ipsam?</p>
-     </div>
+<body>
+    <div class="container_body">
+        <nav id="nav-bar">
+
+            <div class="container">
+
+                <img src="news_logo/traveling_logo.jpg" alt="websitelogo" class="logo">
+                <div class="welcome">
+                    <h1>World Traveling Guide</h1>
+                    <p>Welcome to our site, enjoy the content and experience the world in a different way!</p>
+                </div>
+                <div class="social">
+
+                    <a href="http://facebook.com" target="_blank">
+                        <img src="news_logo/facebook_icon.png" alt="facebook_icon">
+                    </a>
+                    <a href="http://instagram.com" target="_blank">
+                        <img src="news_logo/instagram_icon.png" alt="instagram_icon">
+                    </a>
+                    <a href="http://twitter.com" target="_blank">
+                        <img src="news_logo/twitter_icon.png" alt="twitter_icon">
+                    </a>
+                    <a href="http://whatsapp.com" target="_blank">
+                        <img src="news_logo/whatsapp_icon.png" alt="whatsapp_icon">
+                    </a>
+                    <a href="http://youtube.com" target="_blank">
+                        <img src="news_logo/youtube_icon.png" alt="youtube_icon">
+                    </a>
+                </div>
+
+                <ul class="nav3">
+                    <li>
+                        <a href="http://">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://">Contact</a>
+                    </li>
+                    <li>
+                        <a href="http://">News</a>
+                    </li>
+                    <li>
+                        <a href="http://">About Us</a>
+                    </li>
+                    <li>
+                        <a href="http://">Order Hotel</a>
+                    </li>
+                    <img src="news_logo/airplane_animation.png" alt="airplane_animation" class="airplane">
+                </ul>
+            </div>
+
+        </nav>
+
+        <header id="showcase">
+            <div class="container phone_header">
+                <div class="showcase-container">
+                    <div class="category category-travel">
+                        <h1 style="background: grey;">World Traveling Guide</h1>
+                        <p>Welcome to our site, enjoy the content and experience the world in a different way!</p>
+                        <a href="http://">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+      
+
+
+        <footer id="main-footer" class="py-2">
+            <div class="container footer-container">
+                <div>
+                    <img src="news_logo/travel_gif1.gif" alt="Travel gif animation">
+                    <p>Welcome to TravelSites.com: the only site you’ll need when it's time to travel! Find the perfect
+                        destinations, cheapest
+                        booking options, last-minute deals, cheap flights, and the best hotels. Enjoy travel blogs and
+                        the best travel guides.
+                        Find the cheapest rental cars and the best local restaurants. TravelSites.com will always be
+                        100% free to use and free
+                        of ads. Happy travels!</p>
+                </div>
+                <div>
+                    <h3>Email Newsletter</h3>
+                    <p>For more updates and newsletter please type your email and recieve each day new location and
+                        update!</p>
+                    <form>
+                        <input type="email" placeholder="Enter Email...">
+                        <input type="submit" value="Subscribe" class="btn btn-primary">
+                    </form>
+                </div>
+                <div>
+                    <h3>Site Links</h3>
+                    <ul class="list">
+                        <li><a href="#">Help & Support</a></li>
+                        <br>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <br>
+                        <li><a href="#">About Us</a></li>
+                        <br>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Join Our Club</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt!</p>
+                    <br>
+                    <a href="" class="ButtonNow">Join Now</a>
+                </div>
+
+            </div>
+            <div class="footer_end">
+                <p>
+                    Copyright Yoni_B &copy; 2020, All Rights Reserved
+                </p>
+            </div>
+        </footer>
     </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </html>
