@@ -371,7 +371,10 @@ input:focus {
 .links a {
   margin-left: 4px;
 }
-
+iframe {
+  width: 620px;
+  height: 250px;
+}
 @media screen and (max-width: 414px) {
   .container_body {
     display: grid;
@@ -404,6 +407,10 @@ input:focus {
 
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .youtube {
+    width: 350px;
   }
 
   /* #nav-bar .container img,
